@@ -1,0 +1,254 @@
+nav {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 65vw;
+  background-color: #ADD8E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-radius: 0px 0px 30px 30px;
+  padding: 0.3rem;
+  flex-wrap: wrap;
+  z-index: 499;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav .questionTag {
+  font-size: 0.9em;
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 2px;
+  text-align: center;
+  background-color: rgba(136, 136, 136, 0.6);
+}
+nav .questionTag:hover {
+  cursor: pointer;
+  background-color: rgba(87, 87, 87, 0.75);
+}
+nav .questionTag a {
+  text-decoration: none;
+  width: 20px;
+  color: black;
+  display: block;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+}
+nav #questionTextTag {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+#questions {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 65vw;
+  background-color: #F1EEE6;
+  display: flex;
+  justify-content: start;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.whatIsYourQuestion {
+  font-size: 1.5rem;
+  width: 100%;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.whatIsYourQuestion .questionText {
+  display: block;
+  margin-bottom: 0.6em;
+  margin-top: 0.4em;
+  text-align: center;
+  font-size: 1.3em;
+  font-style: italic;
+}
+.whatIsYourQuestion .answerBox {
+  margin: 0.6em 0;
+}
+.whatIsYourQuestion .answerBox .chooseOneAnswer, .whatIsYourQuestion .answerBox .chooseMultipleAnswers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.whatIsYourQuestion .answerBox .chooseOneAnswer div, .whatIsYourQuestion .answerBox .chooseMultipleAnswers div {
+  box-sizing: border-box;
+  background-color: #87CEEB;
+  width: 47%;
+  text-align: center;
+  overflow-wrap: break-word;
+  margin: 1.5%;
+  padding: 1.5%;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .whatIsYourQuestion .answerBox .chooseOneAnswer div, .whatIsYourQuestion .answerBox .chooseMultipleAnswers div {
+    width: 100%;
+  }
+}
+.whatIsYourQuestion .answerBox .chooseOneAnswer div:hover, .whatIsYourQuestion .answerBox .chooseMultipleAnswers div:hover {
+  background-color: #c3e9ff;
+}
+.whatIsYourQuestion .answerBox .dropAnswer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.whatIsYourQuestion .answerBox .dropAnswer .AnswerDropDivsCointainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.whatIsYourQuestion .answerBox .dropAnswer .AnswerDropDivsCointainer div {
+  padding: 0.7rem;
+  background-color: #87CEEB;
+  padding: 1.5%;
+  margin: 1.5%;
+  border: 2px solid black;
+  max-width: 70%;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.whatIsYourQuestion .answerBox .dropAnswer .AnswerDropDivsCointainer div:hover {
+  background-color: #c3e9ff;
+}
+.whatIsYourQuestion .answerBox .dropAnswer .dropHere {
+  background-color: #ddd;
+  min-width: 70%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.5%;
+  margin: 2.5%;
+}
+.whatIsYourQuestion .questionNumberText {
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 0.2em;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+.whatIsYourQuestion .questionNumberText:hover .hint {
+  opacity: 1;
+  visibility: visible;
+}
+.whatIsYourQuestion .questionNumberText .hint {
+  position: absolute;
+  background-color: #ADD8E6;
+  display: inline-block;
+  z-index: 1;
+  bottom: 100%;
+  left: 30%;
+  font-size: 0.6em;
+  padding: 0.3em;
+  width: 40%;
+  transition: opacity 0.5s;
+  border-radius: 15px;
+  border: 1px solid black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 500;
+}
+
+.whatIsYourQuestion .answerBox .dropAnswer .dropHere {
+  box-shadow: inset 3px 3px 10px #999, inset -3px -3px 10px #fff;
+}
+
+.droppedDiv, .newMoreDiv, header, nav, #questions, .whatIsYourQuestion .answerBox .chooseOneAnswer div, .whatIsYourQuestion .answerBox .chooseMultipleAnswers div, .whatIsYourQuestion .answerBox .dropAnswer .AnswerDropDivsCointainer div, .whatIsYourQuestion .questionNumberText .hint {
+  box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.6);
+}
+
+.droppedDiv, .newMoreDiv, #questions, .whatIsYourQuestion .answerBox .chooseOneAnswer div, .whatIsYourQuestion .answerBox .chooseMultipleAnswers div, .whatIsYourQuestion .answerBox .dropAnswer .AnswerDropDivsCointainer div, .whatIsYourQuestion .answerBox .dropAnswer .dropHere {
+  border-radius: 10px 10px 10px 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+body {
+  background-color: #c3e9ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+}
+
+header {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem auto;
+  margin-bottom: 0;
+  background-color: #F1EEE6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+  border-radius: 30px 30px 0px 0px;
+  font-size: 4rem;
+  width: 65vw;
+  font-style: italic;
+}
+
+.countCorrectText {
+  width: 100%;
+  color: #276738;
+  text-align: center;
+  font-style: italic;
+  display: block;
+}
+
+.newMoreDiv {
+  width: 70%;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.4em;
+  margin: 0.5em auto;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  font-style: italic;
+  background-color: #ADD8E6;
+  border: 1px solid black;
+  display: none;
+}
+
+.droppedDiv {
+  padding: 0.7rem;
+  background-color: rgb(85, 193, 3);
+  padding: 1.5%;
+  margin: 1.5%;
+  border: 2px solid black;
+  max-width: 70%;
+  overflow-wrap: break-word;
+}/*# sourceMappingURL=style.css.map */

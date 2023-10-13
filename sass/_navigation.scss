@@ -1,0 +1,50 @@
+nav
+{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: $pageWidth;
+    background-color: $color4;
+    @extend %shadowDivOriginal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-radius: 0px 0px 30px 30px;
+    padding: .3rem;
+    flex-wrap: wrap;
+    z-index: 499;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .questionTag
+    {
+        font-size: .9em;
+        font-weight: bold;
+        border: 2px solid black;
+        margin: 2px;
+        text-align: center;
+        background-color: $colorQuestionTagOriginal;
+        &:hover
+        {
+            cursor: pointer;
+            background-color: $colorQuestionTagOriginalHover;
+        }
+        a
+        {
+            text-decoration: none;
+            width: 20px;
+            color: black;
+            display: block;
+            padding: $paddingQuestionTag $paddingQuestionTag * 2 $paddingQuestionTag $paddingQuestionTag * 2;
+        }
+    }
+    #questionTextTag
+    {
+        width: 100%;
+        text-align: center;
+        margin-bottom: .2em;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,64 @@
+<Answers>
+    <Question id="q1">
+        <Answer correct="true">Conscientious</Answer>
+        <Answer correct="false">Lazy</Answer>
+        <Answer correct="true">Creative</Answer>
+        <Answer correct="true">Patient</Answer>
+    </Question>
+    <Question id="q2">
+        <Answer correct="true">Independent research and experiments.</Answer>
+        <Answer correct="false">Avoid learning new skills.</Answer>
+        <Answer correct="true">Collaboration and brainstorming with the team.</Answer>
+        <Answer correct="true">Training and courses.</Answer>
+    </Question>
+    <Question id="q3">
+        <Answer correct="false">Give up and resign.</Answer>
+        <Answer correct="true">Set priorities and focus on the most crucial elements.</Answer>
+        <Answer correct="true">Consult with the team and superiors.</Answer>
+        <Answer correct="true">Delve into the problem to find the most effective solution.</Answer>
+    </Question>
+    <Question id="q4">
+        <Answer correct="true">Achieving specific results.</Answer>
+        <Answer correct="true">The opportunity for creative expression.</Answer>
+        <Answer correct="true">Working on diverse and challenging projects.</Answer>
+        <Answer correct="false">Free time and breaks.</Answer>
+    </Question>
+    <Question id="q5">
+        <Answer correct="true">I focus on listening and learning from others.</Answer>
+        <Answer correct="true">I am flexible and can adapt to changes.</Answer>
+        <Answer correct="true">I focus on clear communication.</Answer>
+        <Answer correct="false">I prefer to work alone.</Answer>
+    </Question>
+    <Question id="q6">
+        <Answer correct="true">CSS</Answer>
+        <Answer correct="false">C++</Answer>
+        <Answer correct="true">HTML</Answer>
+        <Answer correct="true">Sass</Answer>
+        <Answer correct="true">JavaScript</Answer>
+        <Answer correct="false">C#</Answer>
+        <Answer correct="false">Java</Answer>
+        <Answer correct="false">Python</Answer>
+        <Answer correct="false">PHP</Answer>
+    </Question>
+    <Question id="q7" more="true" moreDescription="I'm really happy about that!">
+        <Answer correct="true">Yes</Answer>
+        <Answer correct="false">No</Answer>
+        <Answer correct="false">Sorry, but no</Answer>
+    </Question>
+    <Question id="q8">
+        <Answer correct="false">I ignore them.</Answer>
+        <Answer correct="true">They are an opportunity to learn.</Answer>
+        <Answer correct="true">I analyze them.</Answer>
+        <Answer correct="true">I discuss them with the team.</Answer>
+    </Question>
+    <Question id="q9">
+        <Answer correct="true">I engage in hobbies to recharge.</Answer>
+        <Answer correct="true">I set boundaries.</Answer>
+        <Answer correct="false">I am overworked.</Answer> 
+        <Answer correct="true">I am flexible.</Answer>
+    </Question>
+    <Question id="q10" more="true" moreDescription="Awesome! For more details about me, you can check out my CV. I'd also be happy to share more about myself in a job interview.">
+        <Answer correct="true">Yes</Answer>
+        <Answer correct="false">No</Answer>
+    </Question>
+</Answers>

@@ -1,0 +1,154 @@
+#questions
+{
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: $pageWidth;
+    background-color: $color1;
+    @extend %shadowDivOriginal;
+    display: flex;
+    justify-content: start;
+    @extend %borderDivRadius;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.whatIsYourQuestion
+    {
+        font-size: 1.5rem;
+        width: 100%;
+        line-height: 1.6rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+
+        .questionText
+        {
+            display: block;
+            margin-bottom: .6em;
+            margin-top: .4em;
+            text-align: center;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+        .answerBox
+        {
+            margin: .6em 0;
+
+            .chooseOneAnswer, .chooseMultipleAnswers
+            {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                div
+                {
+                    box-sizing: border-box;
+                    background-color: $color3;
+                    width: 50% - $AnswerToQuestionMargin*2;
+                    text-align: center;
+                    overflow-wrap: break-word;
+                    margin: $AnswerToQuestionMargin;
+                    padding: $AnswerToQuestionPadding;
+                    border: 2px solid black;
+                    @extend %borderDivRadius;
+                    cursor: pointer;
+                    @extend %shadowDivOriginal;
+                    transition: all .2s;
+                    @media screen and (max-width: 768px)
+                    {
+                        width: 100%;
+                    }
+                    &:hover
+                    {
+                        background-color: $color2;
+                        
+                    }
+                }
+            }
+            .dropAnswer
+            {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .AnswerDropDivsCointainer
+                {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                    div
+                        {
+                            padding: .7rem;
+                            background-color: $color3;
+                            padding: $AnswerToQuestionPadding;
+                            margin: $AnswerToQuestionMargin;
+                            border: 2px solid black;
+                            @extend %borderDivRadius;
+                            @extend %shadowDivOriginal;
+                            max-width: 70%;
+                            overflow-wrap: break-word;
+                            cursor: pointer;
+                            transition: all .2s;
+                    &:hover
+                    {
+                        background-color: $color2;
+                        
+                    }
+                        }
+                }
+                .dropHere
+                {
+                    background-color: #ddd;
+                    @extend %shadowDivInset;
+                    @extend %borderDivRadius;
+                    min-width: 70%;
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding: $AnswerToQuestionPadding + 1%;
+                    margin: $AnswerToQuestionMargin + 1%;
+                }
+            }
+        }
+        .questionNumberText
+        {
+            font-weight: bold;
+            font-style: italic;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+            margin-top: .2em;
+            padding: .5em;
+            box-sizing: border-box;
+            &:hover .hint
+            {
+                opacity: 1;
+                visibility: visible;
+            }
+            .hint
+            {
+                position: absolute;
+                background-color: $color4;
+                @extend %shadowDivOriginal;
+                display: inline-block;
+                z-index: 1;
+                bottom: 100%;
+                left: 30%;
+                font-size: 0.6em;
+                padding: 0.3em;
+                width: 40%;
+                transition: opacity .5s;
+                border-radius: 15px;
+                border: 1px solid black;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 500;     
+            }
+        }
+    }
